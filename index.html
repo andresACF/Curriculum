@@ -11,10 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
     </head>
-<body>
-    <h1>My Page</h1>
-<p>This is my page.</p>
-</body>
 </html>
 
 <html lang="es">
@@ -23,18 +19,28 @@
     <title>Currículum Vitae</title>
 </head>
 <body>
+    <main>
+    <section id="partearriba">
     <header>
         <h1>Currículum Vitae</h1>
     </header>
+    <div class="imagenCircular">
+        <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_860,h_629/https://medialab.news/wp-content/uploads/2021/03/Captura-de-pantalla-2021-03-24-a-las-16.19.35.png" alt="Imagen Circular">
+    </div>
+    </section>
+
+    <section id="navegacion">
     <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Educación</a></li>
-            <li><a href="#">Experiencia</a></li>
-            <li><a href="#">Habilidades</a></li>
-            <li><a href="#">Contacto</a></li>
+        <ul id="navi">
+            <li id="navi"><a href="#">Inicio</a></li>
+            <li id="navi"><a href="#">Educación</a></li>
+            <li id="navi"><a href="#">Experiencia</a></li>
+            <li id="navi"><a href="#">Habilidades</a></li>
+            <li id="navi"><a href="#">Contacto</a></li>
         </ul>
     </nav>
+    </section>
+
     <section id="informacion-personal">
         <h2 class="subtitulo">Información personal</h2>
         <p>
@@ -61,6 +67,11 @@
         <p>
         Fechas: <span>2020 - 2025</span>
         </p>
+        <div id="Lugar de Estudios">
+            <h2 class="subtitulo">Lugar de estudios</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.747188286564!2d-79.96456940000002!3d-2.1478801999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1sen!2sus!4v1633967325010!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </div>
     </section>
     <section id="experiencia">
         <h2 class="subtitulo">Experiencia</h2>
@@ -92,18 +103,9 @@
             <li>Otros: Inglés, Portugués</li>
         </ul>
     </section>
-    <section id="Estudios">
 
-        <div id="Lugar de Estudios">
-            <h2 class="subtitulo">Lugar de estudios</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.747188286564!2d-79.96456940000002!3d-2.1478801999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1sen!2sus!4v1633967325010!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-        </div>
-        <div>
-            <h2 class="subtitulo">Imagen:</h2>
-                <img src="https://d500.epimg.net/cincodias/imagenes/2019/06/04/lifestyle/1559679036_977776_1559679371_noticia_normal.jpg">
-
-        </div>
+    <section id="formulario">  
         
         <div >
             <h2 class="subtitulo">Formulario de contacto</h2>
@@ -123,7 +125,8 @@
 
     </section>
     <footer>
-    <p>Copyright © 2023 Andrés Cornejo</p>
+    <p id="pie">Copyright © 2023 Andrés Cornejo</p>
     </footer>
+</main>
 </body>
 </html>

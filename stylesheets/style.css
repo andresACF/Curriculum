@@ -1,6 +1,6 @@
 * {
     font-family: Arial, sans-serif;
-    background-color: #fef6e4;
+    background-color: #b8c1ec;
     }
 
 .subtitulo {
@@ -10,22 +10,151 @@ color: #fffffe;
 }
 
 h1 {
+    
     font-family:"Montserrat", Georgia, serif;
-    color: #001858;
+    background-color: #232946;
+    color:#fffffe;
     }
 
+    
+
+nav{
+    background-color: #232946;
+    color: #fffffe;
+}
+
+ul#navi{
+    background-color: #232946;
+    color: #fffffe;
+}
+li#navi{
+    background-color: #232946;
+    color: #fffffe;   
+}
+a{
+    background-color: #232946;
+    color: #fffffe;  
+}
 #experiencia{
     color: #172c66;
 }
-
-section#educacion p{
-    color: #172c66;
+header{
+    background-color: #232946;
+}
+p#pie{
+    background-color: #232946;
+    color: #fffffe;  
+}
+p{
+    background-color: #b8c1ec;
+}
+span{
+    background-color: #b8c1ec;
+}
+h2{
+    background-color: #b8c1ec;
+}
+.imagenCircular {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-section {
+.imagenCircular img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+Grid areas
+*/
+section#partearriba{
+    grid-area: A; 
+    background-color: #232946;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px; 
+    margin-left: -10px; 
+    margin-right: -10px; 
+
+  }
+  
+section#navegacion{
+    grid-area: B; 
+    background-color: #232946;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px; 
+    margin-left: -10px; 
+
+    
+}
+
+section#informacion-personal{
+    grid-area: C; 
+    background-color: #b8c1ec;
+    align-items: center;
+    margin-left: 31%;
+
+    
+}
+
+section#educacion{
+    grid-area: D; 
+    background-color: #b8c1ec;
+}
+
+section#experiencia{
+    grid-area: E; 
+    background-color: #b8c1ec;
+}
+
+section#habilidades{
+    grid-area: F; 
+    background-color: #b8c1ec;
+
+}
+
+section#formulario{
+    grid-area: J; 
+    background-color: #b8c1ec;
+}
+
+footer {
+    grid-area: K;
+    background-color: #232946;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -10px; 
+}
+
+main{
+    display: grid; 
+    row-gap: 0.5rem; 
+    column-gap: 0.5rem; 
+          /* Nombres de las áreas*/
+          grid-template-areas: "A A A A A A"
+          "B B C C C C"
+          "B B D D E E"
+          "B B D D F F"
+          "B B J J J J"
+          "B B K K K K"
+  
+  }
+  
+
+
+
+/*section {
     margin: 20px;
     }
-    /* Set the margin for each side of the section element individually */
+   
  section {
     margin-top: 10px;
     margin-right: 20px;
@@ -35,7 +164,7 @@ section {
 section {
     border: 1px solid black;
     }
-    /* Set the border for each side of the section element individually */
+    
     section {
     border-top: 2px solid red;
     border-right: 3px solid blue;
@@ -46,10 +175,11 @@ section {
     section {
         padding: 20px;
         }
-        /* Set the padding for each side of the section element individually */
+        
         section {
         padding-top: 10px;
         padding-right: 20px;
         padding-bottom: 30px;
         padding-left: 40px;
         }
+        */
