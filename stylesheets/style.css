@@ -23,11 +23,11 @@ nav{
     color: #fffffe;
 }
 
-ul#navi{
+ul.navi{
     background-color: #232946;
     color: #fffffe;
 }
-li#navi{
+li.navi{
     background-color: #232946;
     color: #fffffe;   
 }
