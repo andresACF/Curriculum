@@ -91,6 +91,10 @@ section#navegacion{
     align-items: center;
     margin-top: -10px; 
     margin-left: -10px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
 
     
 }
@@ -139,19 +143,24 @@ main{
     row-gap: 0.5rem; 
     column-gap: 0.5rem; 
           /* Nombres de las áreas*/
-          grid-template-areas: "A A A A A A"
-          "B B C C C C"
-          "B B D D E E"
-          "B B D D F F"
-          "B B J J J J"
-          "B B K K K K"
+          grid-template-areas: 
+          "A A A A"
+          "C C C C"
+          "D D E E"
+          "D D F F"
+          "J J J J"
+          "K K K K";
+    padding-left:5vw;
   
   }
   
+/*  #secciones{
+    margin-left:100px;
+    margin-right:20px;
+}
+*/
 
-
-
-/*section {
+section {
     margin: 20px;
     }
    
@@ -182,4 +191,4 @@ section {
         padding-bottom: 30px;
         padding-left: 40px;
         }
-        */
+        
