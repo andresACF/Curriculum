@@ -103,7 +103,7 @@ section#informacion-personal{
     grid-area: C; 
     background-color: #b8c1ec;
     align-items: center;
-    margin-left: 31%;
+
 
     
 }
@@ -153,6 +153,7 @@ main{
     padding-left:10vw;
   
   }
+
   
 /*  #secciones{
     margin-left:100px;
