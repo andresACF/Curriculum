@@ -1,69 +1,56 @@
 * {
-    font-family: Arial, sans-serif;
-    background-color: #b8c1ec;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.subtitulo {
-    font-family: "Times New Roman", Times, serif;
-    color: #fffffe;
-}
-
-h1 {
-    font-family: "Montserrat", Georgia, serif;
-    background-color: #232946;
-    color: #fffffe;
-}
-
-nav {
-    background-color: #232946;
-    color: #fffffe;
-}
-
-ul.navi {
-    background-color: #232946;
-    color: #fffffe;
-}
-
-li.navi {
-    background-color: #232946;
-    color: #fffffe;
-}
-
-a {
-    background-color: #232946;
-    color: #fffffe;
-}
-
-#experiencia {
-    color: #172c66;
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #232946;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }
 
-p#pie {
-    background-color: #232946;
-    color: #fffffe;
+header h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
-p {
-    background-color: #b8c1ec;
+header p {
+    margin: 0.5rem 0 0;
+    font-weight: 400;
 }
 
-span {
-    background-color: #b8c1ec;
+main {
+    padding: 1rem 2rem;
+}
+
+section {
+    margin: 1.5rem 0;
 }
 
 h2 {
-    background-color: #b8c1ec;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .imagenCircular {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
+    display: block;
+    margin: 1rem auto;
 }
 
 .imagenCircular img {
@@ -72,157 +59,49 @@ h2 {
     object-fit: cover;
 }
 
-/* Grid areas */
-section#partearriba {
-    grid-area: A;
-    background-color: #232946;
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
 }
 
-section#navegacion {
-    grid-area: B;
-    background-color: #232946;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -10px;
-    margin-left: -10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
+form label {
+    margin: 0.5rem 0 0.2rem;
 }
 
-section#informacion-personal {
-    grid-area: C;
-    background-color: #b8c1ec;
-    align-items: center;
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
 }
 
-section#educacion {
-    grid-area: D;
-    background-color: #b8c1ec;
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.7rem;
+    border-radius: 4px;
 }
 
-section#experiencia {
-    grid-area: E;
-    background-color: #b8c1ec;
-}
-
-section#habilidades {
-    grid-area: F;
-    background-color: #b8c1ec;
-}
-
-section#formulario {
-    grid-area: J;
-    background-color: #b8c1ec;
+form input[type="submit"]:hover {
+    background-color: #555;
 }
 
 footer {
-    grid-area: K;
-    background-color: #232946;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -10px;
-}
-
-main {
-    display: grid;
-    row-gap: 0.5rem;
-    column-gap: 0.5rem;
-    padding-left: 220px; /* Compensar la barra de navegación fija */
-    /* Nombres de las áreas */
-    grid-template-areas:
-        "A A A A"
-        "C C C C"
-        "D D E E"
-        "D D F F"
-        "J J J J"
-        "K K K K";
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    section#navegacion {
-        position: relative;
-        height: auto;
-        width: 100%;
-    }
-
-    main {
-        display: block;
-        padding-left: 0;
-    }
-
-    .info-personal-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .info-personal, .video-container {
-        width: 100%;
-    }
-
-    iframe {
-        width: 100%;
-        height: auto;
-    }
-
-    .imagenCircular {
-        width: 150px;
-        height: 150px;
-    }
-}
-
-@media (max-width: 480px) {
-    h1, h2, p, a, li {
-        font-size: 14px;
-    }
-
-    .imagenCircular {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-section {
-    margin: 20px;
-}
-
-section {
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    margin-left: 40px;
-}
-
-section {
-    border: 1px solid black;
-}
-
-section {
-    border-top: 2px solid red;
-    border-right: 3px solid blue;
-    border-bottom: 4px solid green;
-    border-left: 5px solid yellow;
-}
-
-section {
-    padding: 20px;
-}
-
-section {
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    padding-left: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
