@@ -68,6 +68,17 @@ ul li {
     margin: 0.5rem 0;
 }
 
+.habilidades-lista li {
+    display: flex;
+    align-items: center;
+}
+
+.icono-habilidad {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
 form {
     display: flex;
     flex-direction: column;
